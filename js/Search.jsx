@@ -8,6 +8,10 @@ class Search extends Component {
     searchTerm: ''
   };
 
+  props: {
+    shows: Array<Show>
+  };
+
   handleSearchTermChange = (event: SyntheticKeyboardEvent & { target: HTMLInputElement }) => {
     this.setState({ searchTerm: event.target.value });
   };
